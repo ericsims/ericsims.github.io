@@ -1,0 +1,26 @@
+timezone: America/Denver
+
+# own settings
+name: ericsims.github.io
+description: Eric Sims Portfolio
+copyright: 2017
+author:
+    name: Eric Sims
+    github_link: https://github.com/ericsims
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "basic"
+  -
+    scope:
+      path: "_projects"
+    values:
+      layout: "project"

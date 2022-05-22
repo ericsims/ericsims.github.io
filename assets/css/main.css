@@ -1,0 +1,173 @@
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url('https://fonts.googleapis.com/css?family=Spectral'); 
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    margin: 0;
+    font-size: 20px;
+    font-family: 'Spectral', serif;
+  }
+  
+  /* Header & Nav Bar */
+
+  #header {
+      margin: 0;
+      padding: 10vh 20vw 1vh;
+  }
+
+  div#title a{
+    border-style: solid;
+    border-color: rgb(165,60,31);
+    border-image: 
+    linear-gradient(
+      to right, 
+      rgb(165,60,31), 
+      rgb(245, 217, 59)
+    ) 10 stretch;
+
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    color: rgb(77,101,139);
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-size: 10vh;
+  }
+
+  #nav {
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+  }
+
+  #nav a {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+
+    color: rgb(165,60,31);
+  }
+
+  #nav a:hover{
+    color: rgb(245, 217, 59);
+  }
+
+
+  /* Project Icons */
+
+  #project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  li.project {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 1rem;
+    width: 24vmax;
+    height: 12vmax;
+    min-height: 175px;
+    text-align: center;
+    background-size: 25vw;
+    background-position: center;
+  }
+
+  li.project:hover {
+    position: relative;
+    left: -1px;
+    top:-1px;
+    box-shadow: 3px 3px 5px grey;
+  }
+  
+  li.project a {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+      
+    text-decoration: none;
+    font-size: calc(2.5vw);
+
+  }
+
+  li.project a .title {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    max-width: 20vmax;
+    max-height: 10vmax;
+    background-color: rgba(0,0,0,0.5);
+    margin: 0;
+    padding: .5em;
+
+  }
+
+li.project .year {
+  font-size: 1vw;
+  font-family: 'Spectral', serif;
+}
+
+/* Page Styles */
+
+#content {
+  margin: 0 20vw;
+}
+
+#content h1{
+  font-family: 'Josefin Sans', sans-serif;
+  width: 59vw;
+  text-align: center;
+  margin:0;
+}
+
+#thumb {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 36vmax;
+  height: 20vmax;
+  background-size: 37vw;
+  background-position: center;
+}
+
+.inline-img{
+  width:50%; 
+  margin: 0 25%;
+}
+
+/* from image gallery */
+ul.image-gallery {display: flex; flex-wrap: wrap; justify-content: center; overflow: auto; padding: 0;}
+.image-gallery li { list-style-type: none; margin: 0 0 1% 1%; width: 19%;}
+.image-gallery li a { text-align: center; text-decoration: none!important; color: #777;}
+.image-gallery li a span {display: block; text-overflow: ellipsis; overflow: hidden; white-space: nowrap; padding: 3px 0;}
+.image-gallery li a img {width: 100%; display: block;}
+
+h3.image-gallery {
+  width: 59vw;
+  text-align: center;
+  margin:0;
+}
+p.image-gallery {
+  font-size: .8em;
+  width: 59vw;
+  text-align: center;
+  margin: 0;
+}
+/* IG video blocks */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: center;
+  justify-content: space-evenly;
+}
