@@ -8,13 +8,13 @@ year: 2018
 ## About
 Candlefinder is a robot that was built to compete in the [Trinity College Fire Fighting Home Robot Competition](http://www.trincoll.edu/events/robot/). The challenge was to build a robot that can autonomously navigate a maze in order to locate and extinguish a randomly placed candle. 
 
-Candlefinder (known as Opposite Direction in 2018) was built is a team of two engineering students from Tunxis Community College and University of Hartford. We competed in both the 2017 and 2018 seasons. Our primary goal was to utilize sensors beyond the scope of typical hobby level robotics, such as a LIDAR and FLIR camera. 
+Candlefinder (known as Opposite Direction in 2018) was built is a team of two engineering students from University of Hartford (myself) and Tunxis Community College (Giselle). We competed in both the 2017 and 2018 seasons. Our primary goal was to utilize sensors beyond the scope of typical hobby level robotics, such as a LIDAR and FLIR camera. 
 
 ### Awards
 It was awarded the IEEE Outstanding Robots from Connecticut Award in both 2017 and 2018 for its unique array of sensors and sophisticated maze exploration strategy.
 
 ### Design
-Candlefinder has a unique 3-wheel "vector drive" which allows the robot to immediately roll in any direction without rotating its base. It relies on the RPLidar and SLAM localization to autonomously navigate a maze, and a USB camera (and later a FLIR camera) with OpenCV to locate the candle. The robot uses a CO2 system to extinguish candle flames.
+Candlefinder has a unique 3-wheel "vector drive" which allows the robot to traverse in any direction without rotating its base. It relies on the RPLidar and SLAM localization to autonomously navigate a maze, and a USB camera (and later a FLIR camera) with OpenCV to locate the candle. The robot uses a CO2 system to extinguish candle flames.
 
 Candlefinder used [Robot Operating System (ROS)](https://www.ros.org/), enabling its main computer to manage many tasks in a modular fashion in order to accomplish its sensor processing and autonomous navigation goals. 
 
